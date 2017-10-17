@@ -1,0 +1,15 @@
+<doctype html>
+<html>
+    <head>
+        <title>ListView</title>
+    </head>
+    <body>
+            <a href="{% url 'post-list' %}">Back Home</a>
+        <h1>Post View Works</h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" />
+            </form>
+    </body>
+</html>
